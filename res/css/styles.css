@@ -1,0 +1,175 @@
+* {
+    font-family: "Consolas", monospace ;
+    box-sizing: border-box;
+    /*
+       CSS comment
+       The box-sizing CSS property sets how the total width and height of an element are calculated. 
+       If you set box-sizing: border-box; on an element, padding, and border are included in the width and height:
+    */
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    line-height: 1.6;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+     /* 
+       list-style: none = No marker is shown 
+     */
+    }
+
+a {
+    color:cadetblue;
+    text-decoration: none;
+     /* 
+       text-decoration: none - is used here to not show underlining under an anchor element when a mouse hovers over it.
+       Comment it out and check the result on the page.
+     */
+    }
+
+.logo {
+    margin: 0;
+    font-size: 1.1em;
+      }
+
+section {
+    padding: 10px 15px;
+    margin: 10px;
+    display: block;
+        /* 
+          display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
+       */
+}
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #646174;
+    background-color: lightgrey;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+
+    /* 
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+
+    -webkit-box-shadow and -moz-box-shadow were browser-specific box-shadow implementations for
+     WebKit browsers like Google Chrome and Safari, and mozilla firefox. Such prefixes are, usually
+     used, when a new CSS feature appears and disappears when the feature is fully supported by 
+     the browser.
+
+     In short, concerning Vendor Prefixes (-webkit, -moz, etc.):  
+       1- A new CSS feature appears;
+       2- Browsers test the feature; 
+       3- Browsers add a prefix to it to allow using it;
+       4- There is no need for the prefix anymore when the feature is fully supported.
+     */
+
+    border-radius: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    
+}
+
+.nav {
+    margin-top: 5px;
+     }
+
+.nav a {
+    padding: 10px 15px;
+    display: block;
+    color: #34495e;
+    font-size: .99em;
+       }
+
+/* Pseudo-class selector */
+.nav a:hover {
+    color: #092747;
+}
+
+/* 
+    Applies when the browser's width is 800px wide or wider: 
+*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* 
+     Applies when the browser's width is 1000px wide or wider: 
+     */
+
+@media (min-width: 1000px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;;
+    }
+}
+
+.grid p {
+    background-color: rgb(177,164,164);
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+footer a {
+    color: violet;
+}
+
+.login-container {
+    width: 350px;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.login-container p {
+    font-weight: normal;
+    margin: 1%;
+}
+
+.login-container h2 {
+font-size: 1em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    color: white;
+    background-color: #092747;
+    width: fit-content;
+    align-self: center;
+    border: none;
+    margin: 5px;
+    padding: 10px 10px;
+}
+
+input {
+    width: 40%;
+    align-self: center;
+    padding: 10px 5px;
+    border: none;
+}
+
+input::placeholder {
+color: #bdbdbd;
+}
