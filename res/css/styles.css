@@ -95,6 +95,7 @@ section {
 /* Pseudo-class selector */
 .nav a:hover {
     color: #092747;
+    background-color: lightblue;
 }
 
 /* 
@@ -160,6 +161,35 @@ font-size: 1em;
     flex: 1;
 }
 
+/* 
+    Example of a child selector
+*/
+.postText > label,
+.selectFile > label {
+    font-weight: bold;
+}
+
+/* 
+    Example of a Adjacent Sibling Selector and pseudo-element
+*/
+.selectFile > label + .postFile::file-selector-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    width: fit-content;
+    margin: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+/* 
+    Example of a General Sibling Selector
+*/
+.postText > label ~ textarea {
+    border: 2px solid teal;
+}
+
+
 form {
     display: flex;
     flex-direction: column;
@@ -174,6 +204,7 @@ button {
     border: none;
     margin: 5px;
     padding: 10px 10px;
+    cursor: pointer;
 }
 
 input {
