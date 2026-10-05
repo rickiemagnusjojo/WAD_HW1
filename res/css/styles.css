@@ -130,7 +130,7 @@ footer a {
     color: violet;
 }
 
-.login-container {
+.login-container, .addPost-container {
     width: 350px;
     padding: 20px;
     background-color: lightgray;
@@ -138,13 +138,26 @@ footer a {
     text-align: center;
 }
 
-.login-container p {
+.login-container p , .addPost-container{
     font-weight: normal;
     margin: 1%;
 }
 
-.login-container h2 {
+.login-container h2, .addPost-container {
 font-size: 1em;
+}
+
+.postText, .selectFile {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.postTextArea,
+.postFile {
+    flex: 1;
 }
 
 form {

@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="res/css/styles.css">
+    <title>Add post</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <a class="logo" href="login.html"><img src="res/images/me.png" width="50" height="50" alt="My picture"></a>
+    </header>
+
+    <main>
+        <section class="addPost-container">
+            <h2>Add post</h2>
+            
+            <form action="index.html">
+            <p class="postText">
+                <label>Post<br>body</label>
+                <textarea class="postTextArea" cols="31" rows="10" placeholder="textarea" required></textarea>
+            </p>
+            <p class="selectFile">
+                <label>Select<br>file</label>
+                <input type="file" class="postFile">
+            </p>
+                <button type="submit">Create post</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
