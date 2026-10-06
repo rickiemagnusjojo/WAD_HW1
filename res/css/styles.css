@@ -258,6 +258,12 @@ article > div {
     margin-bottom: 5px;
 }
 
+.likebutton {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
+
 .sidebar {
     background-color: lightgrey;
     border-radius: 5px;
