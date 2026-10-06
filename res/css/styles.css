@@ -236,7 +236,7 @@ header + div {
     gap: 10px;
 }
 
-.maincontent {
+.posts {
     display: flex;
     flex-direction: column;
     gap: 10px;
