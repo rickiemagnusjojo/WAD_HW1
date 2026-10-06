@@ -258,6 +258,10 @@ article > div {
     margin-bottom: 5px;
 }
 
+article img {
+    max-width: 100%;
+}
+
 .likebutton {
     padding: 0px;
     margin: 0px;
