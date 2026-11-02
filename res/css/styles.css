@@ -251,11 +251,23 @@ article {
     max-width: 100%;
 }
 
-article > div {
+.postheader {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 5px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.likes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 article img {
