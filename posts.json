@@ -1,0 +1,90 @@
+[{
+  "id": 1,
+  "author": "John Doe",
+  "date": "2026-10-22",
+  "text": "Tartu 2022",
+  "image": "res/images/tartu.jpg",
+  "likes": 3
+},
+
+{
+  "id": 2,
+  "author": "Barry Allen",
+  "date": "2026-02-01",
+  "text": "I just ran from Tartu to Tallinn!",
+  "image": null,
+  "likes": 5
+},
+
+{
+  "id": 3,
+  "author": "Emma Stone",
+  "date": "2026-03-14",
+  "text": "Pärnu beach trip",
+  "image": "res/images/parnu.jpg",
+  "likes": 8
+},
+
+{
+  "id": 4,
+  "author": "Michael Scott",
+  "date": "2026-04-28",
+  "text": "Weekend in Viljandi",
+  "image": "res/images/viljandi.jpg",
+  "likes": 12
+},
+
+{
+  "id": 5,
+  "author": "Sarah Connor",
+  "date": "2026-05-09",
+  "text": "Hiking near Otepää",
+  "image": "res/images/otepaa.jpg",
+  "likes": 15
+},
+
+{
+  "id": 6,
+  "author": "Tony Stark",
+  "date": "2026-06-21",
+  "text": "Summer in Saaremaa",
+  "image": "res/images/saaremaa.jpg",
+  "likes": 27
+},
+
+{
+  "id": 7,
+  "author": "Bruce Wayne",
+  "date": "2026-07-11",
+  "text": "Narva needs me",
+  "image": null,
+  "likes": 6
+},
+
+{
+  "id": 8,
+  "author": "Natasha Romanoff",
+  "date": "2026-08-19",
+  "text": "Exploring Haapsalu",
+  "image": "res/images/haapsalu.jpg",
+  "likes": 18
+},
+
+{
+  "id": 9,
+  "author": "Peter Parker",
+  "date": "2026-09-07",
+  "text": "It's a brand new day in Rakvere",
+  "image": null,
+  "likes": 11
+},
+
+{
+  "id": 10,
+  "author": "Diana Prince",
+  "date": "2026-10-30",
+  "text": "Autumn colors in Tartu",
+  "image": "res/images/tartu_autumn.jpg",
+  "likes": 24
+}
+]
