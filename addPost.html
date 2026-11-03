@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/css/styles.css">
+    <script type="text/javascript" src="src/js/dropdown.js" defer></script>
     <title>Add post</title>
 </head>
 
 <body>
-
 
     <header class="header">
         <nav>
@@ -19,8 +19,15 @@
             </ul>
         </nav>
 
-        <a class="logo" href="login.html"><img src="res/images/me.png" width="50" height="50" alt="My picture"></a>
-    </header>
+        <div class="profile">
+            <img class="logo" id="userLogo" src="res/images/me.png" alt="Profile picture">
+            <div class="dropdownContent" id="dropdown">
+                <p class="username">John Doe</p>
+                <p class="email">john.doe@ut.ee</p>
+                <a href="./login.html" id="logout">logout</a>
+            </div>
+        </div>    
+        </header>
 
     <main>
         <section class="addPost-container">
