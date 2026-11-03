@@ -7,15 +7,24 @@
         <link rel="icon" href="res/images/favicon.ico">
         <link rel="stylesheet" href="res/css/styles.css">
         <script type="text/javascript" src="src/js/posts.js"></script>
+        <script type="text/javascript" src="src/js/dropdown.js" defer></script>
         <title>Index</title>
     </head>
     <body>
         <header class="header">
             <nav class="nav">
-                <a href="./login.html">Log in</a>
                 <a href="./addPost.html">Add post</a>
             </nav>
-            <img class="logo" src="res/images/me.png" alt="Profile picture">
+            <div class="profile">
+                <img class="logo" id="userLogo" src="res/images/me.png" alt="Profile picture">
+
+                <div class="dropdownContent" id="dropdown">
+                    <p class="username">John Doe</p>
+                    <p class="email">john.doe@ut.ee</p>
+                    <a href="./login.html" id="logout">logout</a>
+                </div>
+
+            </div>
         </header>
         <div>
             <div class="sidebar"></div>
