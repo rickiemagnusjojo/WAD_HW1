@@ -12,4 +12,14 @@ export default {
 </script>
 
 <style>
+nav {
+    padding: .5em;
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
 </style>
