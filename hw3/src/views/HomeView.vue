@@ -2,20 +2,19 @@
   <div class="home">
     <HeaderComponent />
     <div class="posts">
-      <article class="post" v-for="post in postList" :key="post.id">
-        <p>{{ post.text }}</p>
-      </article>
+      <PostComponent v-for="post in postList" :post="post" />
     </div>
   </div>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
+import PostComponent from '@/components/PostComponent.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HeaderComponent,
+    HeaderComponent, PostComponent
   },
   data: function() {
     return {
