@@ -8,7 +8,7 @@ export default createStore({
         "author": "John Doe",
         "date": "2026-10-22",
         "text": "Tartu 2022",
-        "image": "../assets/tartu.jpg",
+        "image": "tartu.jpg",
         "likes": 3
       },
 
@@ -26,7 +26,7 @@ export default createStore({
         "author": "Emma Stone",
         "date": "2026-03-14",
         "text": "Pärnu beach trip",
-        "image": "../assets/parnu.jpg",
+        "image": "parnu.jpg",
         "likes": 8
       },
 
@@ -35,7 +35,7 @@ export default createStore({
         "author": "Michael Scott",
         "date": "2026-04-28",
         "text": "Weekend in Viljandi",
-        "image": "../assets/viljandi.jpg",
+        "image": "viljandi.jpg",
         "likes": 12
       },
 
@@ -44,7 +44,7 @@ export default createStore({
         "author": "Sarah Connor",
         "date": "2026-05-09",
         "text": "Hiking near Otepää",
-        "image": "../assets/otepaa.jpg",
+        "image": "otepaa.jpg",
         "likes": 15
       },
 
@@ -53,7 +53,7 @@ export default createStore({
         "author": "Tony Stark",
         "date": "2026-06-21",
         "text": "Summer in Saaremaa",
-        "image": "../assets/saaremaa.jpg",
+        "image": "saaremaa.jpg",
         "likes": 27
       },
 
@@ -71,7 +71,7 @@ export default createStore({
         "author": "Natasha Romanoff",
         "date": "2026-08-19",
         "text": "Exploring Haapsalu",
-        "image": "../assets/haapsalu.jpg",
+        "image": "haapsalu.jpg",
         "likes": 18
       },
 
@@ -89,7 +89,7 @@ export default createStore({
         "author": "Diana Prince",
         "date": "2026-10-30",
         "text": "Autumn colors in Tartu",
-        "image": "../assets/tartu_autumn.jpg",
+        "image": "tartu_autumn.jpg",
         "likes": 24
       }
     ]

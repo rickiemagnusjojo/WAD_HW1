@@ -7,6 +7,7 @@
         </div>
         <p>{{ post.date }}</p>
     </div>
+    <img v-if="post.image != null" :src="postImage" class="postimage">
     <p>{{ post.text }}</p>
     <div class="likes">
         <button class="likebutton">
@@ -18,12 +19,17 @@
 </template>
 
 <script>
+const images = import.meta.glob('../assets/*', {
+    eager: true,
+    import: 'default'
+});
+
 export default {
     name: 'PostComponent',
     props: ['post'],
-    data() {
-        return {
-            post: this.post,
+    computed: {
+        postImage() {
+            return images[`../assets/${this.post.image}`];
         }
     }
 }
@@ -56,6 +62,10 @@ article {
   width: 50px;
   height: 50px;
   border-radius: 10px;
+}
+
+.postimage {
+  max-width: 100%;
 }
 
 .likes {
