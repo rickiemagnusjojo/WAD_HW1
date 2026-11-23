@@ -3,20 +3,25 @@
   <div class="home">
     <div class="sidebar"></div>
     <div class="posts">
+      <button @click="resetLikes">
+        Reset all likes
+      </button>
       <PostComponent v-for="post in postList" :post="post" />
     </div>
     <div class="sidebar"></div>
   </div>
+  <FooterComponent />
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import PostComponent from '@/components/PostComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    HeaderComponent, PostComponent
+    HeaderComponent, PostComponent, FooterComponent
   },
   data: function() {
     return {
@@ -24,7 +29,12 @@ export default {
   computed: {
     postList(){
       return this.$store.state.postList
-  }}
+  }},
+  methods: {
+    resetLikes() {
+      this.$store.commit('resetLikes')
+    }
+  }
 }
 </script>
 

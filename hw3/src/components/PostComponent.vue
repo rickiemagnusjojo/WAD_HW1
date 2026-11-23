@@ -10,7 +10,7 @@
     <img v-if="post.image != null" :src="postImage" class="postimage">
     <p>{{ post.text }}</p>
     <div class="likes">
-        <button class="likebutton">
+        <button class="likebutton" @click="likePost">
             <img src="../assets/like.png">
         </button>
         <p>{{ post.likes }}</p>
@@ -31,6 +31,11 @@ export default {
         postImage() {
             return images[`../assets/${this.post.image}`];
         }
+    },
+    methods: {
+      likePost() {
+        this.$store.commit('incrementLike', this.post.id)
+      }
     }
 }
 </script>

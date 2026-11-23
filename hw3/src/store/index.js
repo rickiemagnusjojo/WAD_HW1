@@ -97,6 +97,19 @@ export default createStore({
   getters: {
   },
   mutations: {
+    incrementLike(state, postId) {
+      const post = state.postList.find(post => post.id === postId)
+
+      if (post) {
+        post.likes++
+      }
+    },
+
+    resetLikes(state) {
+      state.postList.forEach(post => {
+        post.likes = 0
+      })
+    }
   },
   actions: {
   },
