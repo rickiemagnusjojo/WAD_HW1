@@ -39,9 +39,13 @@ export default {
 </script>
 
 <style>
+* {
+    box-sizing: border-box;
+}
 
 body {
   font-family: "Consolas", monospace;
+  margin: 0;
 }
 
 .home {
@@ -54,7 +58,7 @@ body {
 }
 
 .sidebar {
-  background-color: lightgrey;
+  background-color: lightblue;
   border-radius: 5px;
   width: 10%;
 }
