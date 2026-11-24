@@ -32,37 +32,45 @@ export default {
     methods: {
         signUp() {
             const password = this.password;
+            const errors = [];
+
             // check length of password
             if (password.length < 8 || password.length > 20) {
-                this.errorMessage = 'Password must be between 8 and 20 characters.';
-                return;
+                // this.errorMessage = 'Password must be between 8 and 20 characters.';
+                errors.push('Password must be between 8 and 20 characters.');
             }
             // check if password contains at least one Uppercase letter
             if (!/[A-Z]/.test(password)) {
-                this.errorMessage = 'Password must contain at least one uppercase letter.';
-                return;
+                // this.errorMessage = 'Password must contain at least one uppercase letter.';
+                errors.push('Password must contain at least one uppercase letter.');
             }
             // check if password contains at least two lowercase letters
             if ((password.match(/[a-z]/g) || []).length < 2) {
-                this.errorMessage = 'Password must contain at least two lowercase characters.';
-                return;
+                // this.errorMessage = 'Password must contain at least two lowercase characters.';
+                errors.push('Password must contain at least two lowercase characters.');
             }
             // check if password contains at least one digit
             if (!/\d/.test(password)) {
-                this.errorMessage = 'Password must contain at least one numeric value.';
-                return;
+                // this.errorMessage = 'Password must contain at least one numeric value.';
+                errors.push('Password must contain at least one numeric value.');
             }
             // check if password starts with an uppercase letter
             if (!/^[A-Z]/.test(password)) {
-                this.errorMessage = 'Password must start with an uppercase letter.';
-                return;
+                // this.errorMessage = 'Password must start with an uppercase letter.';
+                errors.push('Password must start with an uppercase letter.');
             }
             // check if password contains "_"
             if (!password.includes('_')) {
-                this.errorMessage = 'Password must include the character "_".';
-                return;
+                // this.errorMessage = 'Password must include the character "_".';
+                errors.push('Password must include the character "_".');
             }
 
+            if (errors.length > 0) {
+                this.errorMessage = errors.join(' ');
+                return;
+            }
+            
+            this.errorMessage = "";
             this.$router.push({ name: 'home' });
         }
     }
