@@ -79,6 +79,7 @@ export default {
 <style>
 .signup {
     width: 450px;
+    max-width: calc(100% - 30px);
     padding: 20px;
     background-color: lightgray;
     border-radius: 15px;
